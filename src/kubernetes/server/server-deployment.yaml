@@ -66,5 +66,5 @@ spec:
           # Add Maven repo for metadata artifact resolution for all stream apps
         - name: SPRING_APPLICATION_JSON
           value: "{ \"maven\": { \"local-repository\": null, \"remote-repositories\": { \"repo1\": { \"url\": \"https://repo.spring.io/libs-snapshot\"} } } }"
-          serviceAccountName: scdf-sa
+      serviceAccountName: scdf-sa
 
