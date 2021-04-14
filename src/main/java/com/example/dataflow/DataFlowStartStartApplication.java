@@ -11,14 +11,7 @@ import org.springframework.cloud.deployer.spi.local.LocalDeployerAutoConfigurati
 import org.springframework.cloud.kubernetes.KubernetesAutoConfiguration;
 
 @EnableDataFlowServer
-@SpringBootApplication(
-        exclude = {SessionAutoConfiguration.class,
-                ManagementWebSecurityAutoConfiguration.class,
-                SecurityAutoConfiguration.class,
-                UserDetailsServiceAutoConfiguration.class,
-                LocalDeployerAutoConfiguration.class,
-                KubernetesAutoConfiguration.class,
-        })
+@SpringBootApplication
 public class DataFlowStartStartApplication {
 
     public static void main(String[] args) {
