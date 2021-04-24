@@ -19,7 +19,7 @@ dependencies {
         exclude group: 'org.springframework.cloud', module: 'spring-cloud-dataflow-platform-cloudfoundry'
 
     }
-    implementation group: 'org.springframework.cloud', name: 'spring-cloud-skipper', version: '2.6.1'
+   // implementation group: 'org.springframework.cloud', name: 'spring-cloud-skipper-server', version: '2.6.1'
     // https://mvnrepository.com/artifact/com.h2database/h2
     testImplementation group: 'com.h2database', name: 'h2', version: '1.4.200'
 
@@ -29,7 +29,7 @@ dependencies {
 group = 'com.springdataflow'
 version = '0.0.1-SNAPSHOT'
 description = 'test'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 publishing {
     publications {
