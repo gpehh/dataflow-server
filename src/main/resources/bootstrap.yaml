@@ -1,0 +1,24 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    generate-unique-name: false
+    name: dataflow
+#    url: jdbc:h2:file:c:/dev/dataflow;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    url:  jdbc:mysql://localhost:3306/dataflow2?createDatabaseIfNotExist=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+    username: root
+    password: 123abc
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8InnoDBDialect
+  cloud:
+    dataflow:
+      features:
+        streams-enabled: false
+    kubernetes:
+      config:
+        enabled: false
+      secrets:
+        enabled: false
